@@ -34,10 +34,4 @@
             android:fragment="com.tripndroid.launcher3.preference.Preferences$GeneralFragment"
             android:title="@string/preferences_interface_general_title" />
 
-    <header android:id="@+id/preferences_application_section"
-            android:title="@string/preferences_application_title" />
-
-    <header android:id="@+id/preferences_application_version"
-            android:summary="@string/application_version" />
-
 </preference-headers>
