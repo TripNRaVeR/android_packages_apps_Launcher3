@@ -58,7 +58,7 @@ import java.util.HashMap;
 import java.util.Stack;
 
 public class CellLayout extends ViewGroup {
-    private static final String TAG = "Launcher.CellLayout";
+    private static final String TAG = "Launcher3.CellLayout";
 
     private Launcher mLauncher;
     private int mCellWidth;

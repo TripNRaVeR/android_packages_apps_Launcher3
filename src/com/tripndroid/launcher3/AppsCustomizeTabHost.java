@@ -41,7 +41,7 @@ import java.util.ArrayList;
 
 public class AppsCustomizeTabHost extends TabHost implements LauncherTransitionable,
         TabHost.OnTabChangeListener  {
-    private static final String TAG = "Launcher.AppsCustomizeTabHost";
+    private static final String TAG = "Launcher3.AppsCustomizeTabHost";
 
     private static final String APPS_TAB_TAG = "APPS";
     private static final String WIDGETS_TAB_TAG = "WIDGETS";
@@ -155,6 +155,9 @@ public class AppsCustomizeTabHost extends TabHost implements LauncherTransitiona
         AppsCustomizeTabKeyEventListener keyListener = new AppsCustomizeTabKeyEventListener();
         View lastTab = tabs.getChildTabViewAt(tabs.getTabCount() - 1);
         lastTab.setOnKeyListener(keyListener);
+         // Soft menu button
+         View overflowMenuButton = findViewById(R.id.overflow_menu_button);
+         overflowMenuButton.setOnKeyListener(keyListener);
 
         // Hide the tab bar until we measure
         mTabsContainer.setAlpha(0f);

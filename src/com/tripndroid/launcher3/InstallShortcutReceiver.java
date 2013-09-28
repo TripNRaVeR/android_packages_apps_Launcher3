@@ -71,7 +71,7 @@ public class InstallShortcutReceiver extends BroadcastReceiver {
 
     // A mime-type representing shortcut data
     public static final String SHORTCUT_MIMETYPE =
-            "com.tripndroid.launcher/shortcut";
+            "com.tripndroid.launcher3/shortcut";
 
     private static Object sLock = new Object();
 

@@ -38,7 +38,7 @@ import com.tripndroid.launcher3.preference.PreferencesProvider;
  */
 public class IconCache {
     @SuppressWarnings("unused")
-    private static final String TAG = "Launcher.IconCache";
+    private static final String TAG = "Launcher3.IconCache";
 
     private static final int INITIAL_ICON_CACHE_CAPACITY = 50;
     private IconPackHelper mIconPackHelper;

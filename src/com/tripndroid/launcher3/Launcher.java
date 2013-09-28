@@ -136,7 +136,7 @@ import java.util.Set;
 public final class Launcher extends Activity
         implements View.OnClickListener, OnLongClickListener, LauncherModel.Callbacks,
                    View.OnTouchListener {
-    private static final String TAG = "Launcher.Launcher";
+    private static final String TAG = "Launcher3.Launcher";
 
     static final boolean PROFILE_STARTUP = false;
     static final boolean DEBUG_WIDGETS = false;
