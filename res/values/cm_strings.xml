@@ -14,15 +14,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <!-- App version -->
     <string name="application_version" translatable="false">1.0</string>
 
     <!-- Menu button text. -->
     <string name="menu">Menu</string>
-
-    <!-- Menu preview text. -->
-    <string name="menu_preview">Preview</string>
 
     <!-- Label for cancel drop target. [CHAR_LIMIT=30] -->
     <string name="cancel_target_label">Cancel</string>
@@ -36,7 +32,7 @@
     <string name="menu_unlock_workspace">Unlock homescreen</string>
 
     <!-- Noun, menu item used to show the launcher preferences -->
-    <string name="menu_preferences">Launcher settings</string>
+    <string name="menu_preferences">Launcher3 settings</string>
 
     <!-- Noun, menu item used to sort apps by name -->
     <string name="menu_apps_sort_title">Name</string>
@@ -66,7 +62,9 @@
     <!-- UI -->
     <string name="preferences_interface_title">Interface</string>
     <!-- Application -->
-    <string name="preferences_application_title">App</string>
+    <string name="preferences_application_title">General</string>
+    <!-- Top header -->
+    <string name="preferences_application_top_title">Launcher3 setup</string>
 
     <!-- UI -->
     <!-- Homescreen -->
@@ -94,8 +92,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Scroll wallpaper when scrolling homescreens</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Wallpaper quick render</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Use wallpaper hack that increases smoothness on static image wallpapers</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Wallpaper size</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">How many screens wide the wallpaper should be</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Fade side screens</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Fade the side screens when scrolling homescreens</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Show outlines</string>
@@ -117,9 +113,9 @@
     <string name="preferences_interface_drawer_hidden_apps_title">Hidden apps</string>
     <string name="preferences_interface_drawer_hidden_apps_summary">Hide apps from the drawer</string>
     <string name="preferences_interface_drawer_hidden_apps_shortcuts_title">Hidden apps (shortcuts)</string>
-    <string name="preferences_interface_drawer_hidden_apps_shortcuts_summary">Remove hidden apps\' shortcuts from homescreen</string>
+    <string name="preferences_interface_drawer_hidden_apps_shortcuts_summary">Remove hidden apps\' shortcuts from drawer</string>
     <string name="preferences_interface_drawer_hidden_apps_widgets_title">Hidden apps (widgets)</string>
-    <string name="preferences_interface_drawer_hidden_apps_widgets_summary">Remove hidden apps\' widgets from homescreen</string>
+    <string name="preferences_interface_drawer_hidden_apps_widgets_summary">Remove hidden apps\' widgets from drawer</string>
     <string name="preferences_interface_drawer_widgets_category">Widgets</string>
     <string name="preferences_interface_drawer_widgets_join_apps_title">Join with apps</string>
     <string name="preferences_interface_drawer_widgets_join_apps_summary">Swipe from apps drawer to widgets drawer without changing tabs</string>
@@ -194,5 +190,14 @@
     <string name="live_folder_cling_create_folder">Live folders allow app developers to create folders with dynamic content.
     Folder contents can be removed with a long press on a single entry. Unlike normal folders, items can only be added by
     the application creating the folder</string>
+
+    <string name="preferences_interface_homescreen_icons_category">Icons</string>
+    <string name="preferences_interface_drawer_bg_category">Background</string>
+    <string name="preferences_interface_drawer_background_title">Background color</string>
+    <string name="preferences_interface_drawer_background_summary">Choose the drawer background color</string>
+    <string name="preferences_interface_drawer_icon_scale_summary">Scale of icons in the app drawer</string>
+    <string name="preferences_interface_homescreen_icon_scale_summary">Scale of icons on the homescreen</string>
+    <string name="dialog_indicator_color_title">Select color</string>
+    <string name="current_input_method">Default</string>
 
 </resources>

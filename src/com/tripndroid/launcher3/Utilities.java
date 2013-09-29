@@ -37,7 +37,7 @@ import android.util.DisplayMetrics;
  */
 final class Utilities {
     @SuppressWarnings("unused")
-    private static final String TAG = "Launcher.Utilities";
+    private static final String TAG = "Launcher3.Utilities";
 
     private static int sIconWidth = -1;
     private static int sIconHeight = -1;

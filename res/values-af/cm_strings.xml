@@ -19,7 +19,7 @@
     <string name="edit_target_label">Redigeer</string>
     <string name="menu_lock_workspace">Sluit tuisskerm</string>
     <string name="menu_unlock_workspace">Ontsluit tuisskerm</string>
-    <string name="menu_preferences">Launcher instellings</string>
+    <string name="menu_preferences">Launcher3 instellings</string>
     <string name="menu_apps_sort_title">Naam</string>
     <string name="menu_apps_sort_install_date">Installeringsdatum</string>
     <string name="menu_apps_filter_system">Stelsel</string>
@@ -31,7 +31,6 @@
     <string name="workspace_locked">Tuisskerm is gesluit, ontsluit om instellings te herrangskik</string>
     <string name="preferences_title">Instellings</string>
     <string name="preferences_interface_title">Koppelvlak</string>
-    <string name="preferences_application_title">Program</string>
     <string name="preferences_interface_homescreen_title">Tuisskerm</string>
     <string name="preferences_interface_homescreen_summary">Skerms en agtergrond</string>
     <string name="preferences_interface_homescreen_general_category">Algemeen</string>
@@ -56,8 +55,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Rol agtergrond wanneer Tuisskerms gerol word</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Rol agtergrond \'hack\'</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Gebruik agtergrond \'hack\' wat beter werkverigting gee tydens die rol van statiese agtergronde</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Agtergrond groote</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Hoeveel skerms wyd die agtergrond moet wees</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Verdof kant skerms</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Verdof die kant skerms wanneer Tuisskerms gerol word</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Wys buitelyne</string>

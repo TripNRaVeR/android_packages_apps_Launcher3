@@ -47,7 +47,7 @@ import java.util.ArrayList;
 public class WallpaperChooserDialogFragment extends DialogFragment implements
         CustomAdapterView.OnItemSelectedListener, CustomAdapterView.OnItemClickListener {
 
-    private static final String TAG = "Launcher.WallpaperChooserDialogFragment";
+    private static final String TAG = "Launcher3.WallpaperChooserDialogFragment";
     private static final String EMBEDDED_KEY = "com.tripndroid.launcher3."
             + "WallpaperChooserDialogFragment.EMBEDDED_KEY";
 
@@ -192,7 +192,7 @@ public class WallpaperChooserDialogFragment extends DialogFragment implements
 
         final Resources resources = getResources();
         // Context.getPackageName() may return the "original" package name,
-        // com.tripndroid.launcher; Resources needs the real package name,
+        // com.tripndroid.launcher3; Resources needs the real package name,
         // com.tripndroid.launcher3. So we ask Resources for what it thinks the
         // package name should be.
         final String packageName = resources.getResourcePackageName(R.array.wallpapers);

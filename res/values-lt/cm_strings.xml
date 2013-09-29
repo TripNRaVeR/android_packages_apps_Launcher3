@@ -18,7 +18,6 @@
     <string name="hidden_apps_title">Slepiamos</string>
     <string name="preferences_title">Nustatymai</string>
     <string name="preferences_interface_title">Išvaizda</string>
-    <string name="preferences_application_title">Programėlės</string>
     <string name="preferences_interface_homescreen_title">Darbalaukis</string>
     <string name="preferences_interface_homescreen_summary">Langai ir tapetai</string>
     <string name="preferences_interface_homescreen_general_category">Pagrindiniai</string>
@@ -43,8 +42,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Slinkti tapetą sukant langus</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Tapeto greitas perpiešimas</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Naudoja tapeto atvaizdavimo modifikaciją</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Tapeto dydis</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Kiek langų tapetas turi dengti</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Blukinti šoninius langus</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Blukinti šoninius langus slenkant</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Rodyti kontūrą</string>

@@ -22,7 +22,6 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.res.Resources;
-import android.provider.Settings;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -52,8 +51,6 @@ public class AppsCustomizeTabHost extends TabHost implements LauncherTransitiona
     private AppsCustomizePagedView mAppsCustomizePane;
     private FrameLayout mAnimationBuffer;
     private LinearLayout mContent;
-    
-    private Context mContext;
 
     private boolean mInTransition;
     private boolean mTransitioningToWorkspace;
@@ -66,7 +63,6 @@ public class AppsCustomizeTabHost extends TabHost implements LauncherTransitiona
 
     public AppsCustomizeTabHost(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
         mRelayoutAndMakeVisible = new Runnable() {
                 public void run() {
@@ -151,18 +147,16 @@ public class AppsCustomizeTabHost extends TabHost implements LauncherTransitiona
         addTab(newTabSpec(WIDGETS_TAB_TAG).setIndicator(tabView).setContent(contentFactory));
         setOnTabChangedListener(this);
 
-        // Setup the key listener to jump between the last tab view
+        // Setup the key listener to jump between the last tab view and the menu icon
         AppsCustomizeTabKeyEventListener keyListener = new AppsCustomizeTabKeyEventListener();
         View lastTab = tabs.getChildTabViewAt(tabs.getTabCount() - 1);
         lastTab.setOnKeyListener(keyListener);
-         // Soft menu button
-         View overflowMenuButton = findViewById(R.id.overflow_menu_button);
-         overflowMenuButton.setOnKeyListener(keyListener);
+        // Soft menu button
+        View overflowMenuButton = findViewById(R.id.overflow_menu_button);
+        overflowMenuButton.setOnKeyListener(keyListener);
 
         // Hide the tab bar until we measure
         mTabsContainer.setAlpha(0f);
-        //Smart Alpha
-        updateAppsCustomizeTabHostAlpha();
     }
 
     @Override
@@ -490,7 +484,6 @@ public class AppsCustomizeTabHost extends TabHost implements LauncherTransitiona
             mAppsCustomizePane.loadAssociatedPages(mAppsCustomizePane.getCurrentPage(), true);
             mAppsCustomizePane.loadAssociatedPages(mAppsCustomizePane.getCurrentPage());
         }
-        updateAppsCustomizeTabHostAlpha();
     }
 
     public void onTrimMemory() {
@@ -502,10 +495,5 @@ public class AppsCustomizeTabHost extends TabHost implements LauncherTransitiona
 
     boolean isTransitioning() {
         return mInTransition;
-    }
-
-    private void updateAppsCustomizeTabHostAlpha() {
-            getBackground().setAlpha(0);
-            mAnimationBuffer.getBackground().setAlpha(0);
     }
 }

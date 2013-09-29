@@ -31,7 +31,6 @@
     <string name="workspace_locked">Domovská obrazovka je uzamknutá, odomknite ju v nastaveniach aby ste mohli robiť úpravy</string>
     <string name="preferences_title">Nastavenia</string>
     <string name="preferences_interface_title">Rozhranie</string>
-    <string name="preferences_application_title">Aplikácia</string>
     <string name="preferences_interface_homescreen_title">Domovská obrazovka</string>
     <string name="preferences_interface_homescreen_summary">Obrazovky a pozadie</string>
     <string name="preferences_interface_homescreen_general_category">Všeobecné</string>
@@ -56,8 +55,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Posunie pozadie pri posúvaní domovských obrazoviek</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Rýchle vykreslenie pozadia</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Použije trik s pozadím, ktorý zvýši jemnosť nehybných obrázkov pozadia</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Veľkosť pozadia</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Určuje na koľko obrazoviek má byť široké pozadie</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Zoslabenie bočných obrazoviek</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Zoslabí bočné obrazovky pri posúvaní domovských obrazoviek</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Zobraziť okraje</string>

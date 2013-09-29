@@ -19,7 +19,7 @@
     <string name="edit_target_label">Modifica</string>
     <string name="menu_lock_workspace">Blocca schermata Home</string>
     <string name="menu_unlock_workspace">Sblocca schermata Home</string>
-    <string name="menu_preferences">Impostazioni Launcher</string>
+    <string name="menu_preferences">Impostazioni Launcher3</string>
     <string name="menu_apps_sort_title">Nome</string>
     <string name="menu_apps_sort_install_date">Data Installazione</string>
     <string name="menu_apps_filter_system">Sistema</string>
@@ -31,7 +31,6 @@
     <string name="workspace_locked">La schermata Home è bloccata, sblocca in impostazioni per riorganizzare</string>
     <string name="preferences_title">Preferenze</string>
     <string name="preferences_interface_title">Interfaccia</string>
-    <string name="preferences_application_title">Applicazione</string>
     <string name="preferences_interface_homescreen_title">Schermata Home</string>
     <string name="preferences_interface_homescreen_summary">Schermate e sfondo</string>
     <string name="preferences_interface_homescreen_general_category">Generale</string>
@@ -56,8 +55,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Muovi lo sfondo quando scorri nella Home</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Rendering rapido dello sfondo</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Usa un hack per incrementare la fluidità delle immagini statiche di sfondo</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Dimensione sfondo</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Numero di schermate totali presenti nello sfondo</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Dissolvenza pagine laterali</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Dissolvi le pagine laterali quando scorri nella Home</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Mostra delineatori</string>

@@ -20,7 +20,7 @@
     <string name="edit_target_label">Bewerken</string>
     <string name="menu_lock_workspace">Startscherm vergrendelen</string>
     <string name="menu_unlock_workspace">Startscherm ontgrendelen</string>
-    <string name="menu_preferences">Launcher-instellingen</string>
+    <string name="menu_preferences">Launcher3-instellingen</string>
     <string name="menu_apps_sort_title">Naam</string>
     <string name="menu_apps_sort_install_date">Installatiedatum</string>
     <string name="menu_apps_filter_system">Systeem</string>
@@ -32,7 +32,6 @@
     <string name="workspace_locked">Startscherm is vergrendeld; om te kunnen ordenen gaat u naar Instellingen om te ontgrendelen</string>
     <string name="preferences_title">Voorkeuren</string>
     <string name="preferences_interface_title">Uiterlijk</string>
-    <string name="preferences_application_title">App</string>
     <string name="preferences_interface_homescreen_title">Startscherm</string>
     <string name="preferences_interface_homescreen_summary">Scherm en achtergrond</string>
     <string name="preferences_interface_homescreen_general_category">Algemeen</string>
@@ -57,8 +56,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Achtergrond laten schuiven bij bladeren door startschermen</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Achtergrond snel renderen</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Techniek toepassen om statische achtergronden vloeiender te tonen</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Grootte achtergrond</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Hoeveel schermen breed de achtergrond moet zijn</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Zijschermen vervagen</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Zijschermen vervagen bij het bladeren door startschermen</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Randen startschermen</string>

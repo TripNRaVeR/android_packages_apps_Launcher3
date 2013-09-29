@@ -9,9 +9,9 @@
 
 <!-- AllApps/Customize/AppsCustomize -->
     <!-- Which default transition effect to use on the AppsCustomize -->
-    <string name="config_drawerDefaultTransitionEffect">CubeIn</string>
+    <string name="config_drawerDefaultTransitionEffect">Accordion</string>
     <!-- The alpha of the AppsCustomize bg in spring loaded mode -->
-    <integer name="config_appsCustomizeSpringLoadedBgAlpha">45</integer>
+    <integer name="config_appsCustomizeSpringLoadedBgAlpha">0</integer>
     <integer name="config_workspaceUnshrinkTime">300</integer>
     <!-- Out of 100, the percent to shrink the workspace during spring loaded mode. -->
     <integer name="config_workspaceSpringLoadShrinkPercentage">80</integer>
@@ -27,13 +27,6 @@
     <integer name="config_appsCustomizeWorkspaceAnimationStagger">40</integer>
     <integer name="config_workspaceAppsCustomizeAnimationStagger">100</integer>
 
-    <!-- Fade/zoom in duration PreviewLayout transition. -->
-    <integer name="config_previewsZoomInTime">350</integer>
-    <integer name="config_previewsZoomOutTime">600</integer>
-    <integer name="config_previewsZoomScaleFactor">7</integer>
-    <integer name="config_previewsFadeInTime">250</integer>
-    <integer name="config_previewsFadeOutTime">200</integer>
-
     <!-- Tab transition animation duration -->
     <integer name="config_tabTransitionDuration">250</integer>
 
@@ -47,7 +40,7 @@
     <!-- Which default transition effect to use on the workspace -->
     <string name="config_workspaceDefaultTransitionEffect">ZoomIn</string>
     <!-- Whether or not to fade the side pages -->
-    <bool name="config_workspaceDefualtFadeInAdjacentScreens">true</bool>
+    <bool name="config_workspaceDefualtFadeInAdjacentScreens">false</bool>
     <!-- Whether to show outlines on the screens when scrolling -->
     <bool name="config_workspaceDefaultShowOutlines">false</bool>
 

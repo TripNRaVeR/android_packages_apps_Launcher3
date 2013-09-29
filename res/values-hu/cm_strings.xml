@@ -26,12 +26,11 @@
     <string name="all_apps_sort_cling_title">Rendezze sorba alkalmazásait</string>
     <string name="all_apps_sort_cling_add_item">"Ha sorba szeretné rendezni alkalmazásait, érintse meg, és tartsa lenyomva az Alkalmazások lapfület."</string>
     <string name="menu_hidden_apps_delete">Visszaállítás</string>
-    <string name="menu_preferences">Launcher beállítások</string>
+    <string name="menu_preferences">Launcher3 beállítások</string>
     <string name="hidden_apps_title">Elrejtett alkalmazások</string>
     <string name="workspace_locked">A kezdőképernyő zárolva van, szerkesztéshez oldja fel a beállításokban</string>
     <string name="preferences_title">Beállítások</string>
     <string name="preferences_interface_title">Felület</string>
-    <string name="preferences_application_title">Névjegy</string>
     <string name="preferences_interface_homescreen_title">Kezdőképernyő</string>
     <string name="preferences_interface_homescreen_summary">Kezdőképernyők és háttérkép</string>
     <string name="preferences_interface_homescreen_general_category">Általános</string>
@@ -56,8 +55,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Háttérkép görgetése a kezdőképernyők közti váltások során</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Háttérkép gyors kirajzolása</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">A háttérkép gyors kirajzolásával a kezdőképernyők közti váltás simábbá tehető</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Háttérkép szélessége</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Válassza ki, hány képernyő szélességű legyen a háttérkép</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Elhalványuló váltás</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Lapozáskor az egymás melletti kezdőképernyők elhalványulnak</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Körvonal megjelenítése</string>

@@ -24,7 +24,6 @@
     <string name="hidden_apps_title">"Aplicații ascunse"</string>
     <string name="preferences_title">"Preferinţe"</string>
     <string name="preferences_interface_title">"Interfaţă"</string>
-    <string name="preferences_application_title">"Aplicaţie"</string>
     <string name="preferences_interface_homescreen_title">"Ecranul de pornire"</string>
     <string name="preferences_interface_homescreen_summary">"Ecrane şi im. de fundal"</string>
     <string name="preferences_interface_homescreen_general_category">"General"</string>
@@ -49,8 +48,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">"Defilați imaginea de fundal atunci când defilaţi ecranele"</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">"Redare rapidă a im. de fundal"</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">"Utilizaţi hack imagine de fundal pentru a spori fineţea imaginilor de fundal statice"</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">"Dimensiune im. de fundal"</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">"Pe câte ecrane se întinde im. de fundal"</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">"Atenuaţi paginile laterale"</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">"Atenuaţi paginile laterale la defilarea ecranelor"</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">"Afişaţi contur"</string>

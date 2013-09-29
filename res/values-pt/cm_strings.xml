@@ -19,10 +19,9 @@
     <string name="menu_apps_sort_install_date">Dia de Instalação</string>
     <string name="all_apps_sort_cling_title">Ordenar seus aplicativos</string>
     <string name="all_apps_sort_cling_add_item">Toque &amp; segure a aba Aplicativos para selecionar o modo de ordenação</string>
-    <string name="menu_preferences">Configurações Launcher</string>
+    <string name="menu_preferences">Configurações Launcher3</string>
     <string name="preferences_title">Preferências</string>
     <string name="preferences_interface_title">Interface</string>
-    <string name="preferences_application_title">Aplicação</string>
     <string name="preferences_interface_homescreen_title">Tela Inicial</string>
     <string name="preferences_interface_homescreen_general_category">Geral</string>
     <string name="preferences_interface_homescreen_general_search_title">Barra de Pesquisa</string>
@@ -56,8 +55,6 @@
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Exibir linhas externas</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_summary">Exibir linhas externas da tela na transição de telas iniciais</string>
     <string name="preferences_interface_homescreen_summary">Telas e papéis de parede</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Tamanho do papel de parede</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Quantidade de telas que o papel de parede deve ocupar</string>
     <string name="preferences_interface_homescreen_indicator_position_title">Indicador de posição</string>
     <string name="preferences_interface_homescreen_indicator_position_summary">Escolha onde mostrar na tela o indicador</string>
     <string name="preferences_interface_icons_title">Ícones</string>
@@ -140,6 +137,6 @@
     <string name="preferences_interface_general_iconpack_title">Pacote de ícones</string>
     <string name="preferences_interface_general_iconpack_summary">Os pacotes de ícones substituem os ícones padrões das aplicações</string>
     <string name="dialog_pick_iconpack_title">Escolhe o pacote de ícones</string>
-    <string name="default_iconpack_title">Ícones padrões</string>
+    <string name="default_iconpack_title">Padrão</string>
     <string name="no_iconpacks_summary">Nenhum pacote de ícones instalado</string>
 </resources>

@@ -20,7 +20,7 @@
     <string name="edit_target_label">Επεξεργασία</string>
     <string name="menu_lock_workspace">Κλείδωμα αρχικής οθόνης</string>
     <string name="menu_unlock_workspace">Ξεκλείδωμα αρχικής οθόνης</string>
-    <string name="menu_preferences">Ρυθμίσεις Launcher</string>
+    <string name="menu_preferences">Ρυθμίσεις Launcher3</string>
     <string name="menu_apps_sort_title">Όνομα</string>
     <string name="menu_apps_sort_install_date">Ημερομηνία εγκατάστασης</string>
     <string name="menu_apps_filter_system">Σύστημα</string>
@@ -32,7 +32,6 @@
     <string name="workspace_locked">Η αρχική οθόνη είναι κλειδωμένη, ξεκλειδώστε την από τις ρυθμίσεις για να κάνετε αλλαγές</string>
     <string name="preferences_title">Ρυθμίσεις</string>
     <string name="preferences_interface_title">Διεπαφή</string>
-    <string name="preferences_application_title">Εφαρμογή</string>
     <string name="preferences_interface_homescreen_title">Αρχική οθόνη</string>
     <string name="preferences_interface_homescreen_summary">Οθόνες και ταπετσαρία</string>
     <string name="preferences_interface_homescreen_general_category">Γενικά</string>
@@ -57,8 +56,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Κύλιση ταπετσαρίας κατά τη μετακίνηση στις αρχικές οθόνες</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Γρήγορος σχεδιασμός ταπετσαρίας</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Χρήση του hack ταπετσαρίας που αυξάνει την ομαλότητα στις στατικές ταπετσαρίες</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Μέγεθος ταπετσαρίας</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Πόσες οθόνες θα καλύπτει η ταπετσαρία</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Ξεθώριασμα οθονών</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Ξεθώριασμα των διπλανών οθονών κατά την κύλιση μεταξύ αρχικών οθονών</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Εμφάνιση περιγράμματος</string>

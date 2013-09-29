@@ -32,11 +32,19 @@
             launcher:min1="3"
             launcher:max2="@integer/config_maxWorkspaceColumns"
             launcher:min2="3" />
-        <!-- 
-            The user can now dynamically add or remove homescreens via homescreen previews 
-            as well as set the default homescreen, so there is no longer a need for preferences
-            for adjusting those values
-        -->
+        <com.tripndroid.launcher3.preference.NumberPickerPreference android:key="ui_homescreen_screens"
+            android:title="@string/preferences_interface_homescreen_general_screens_title"
+            android:summary="@string/preferences_interface_homescreen_general_screens_summary"
+            android:defaultValue="5"
+            launcher:max="7"
+            launcher:min="1" />
+        <com.tripndroid.launcher3.preference.NumberPickerPreference android:key="ui_homescreen_default_screen"
+            android:title="@string/preferences_interface_homescreen_general_default_screen_title"
+            android:summary="@string/preferences_interface_homescreen_general_default_screen_summary"
+            android:defaultValue="3"
+            launcher:maxExternal="ui_homescreen_screens"
+            launcher:max="5"
+            launcher:min="1" />
         <CheckBoxPreference android:key="ui_homescreen_stretch_screens"
             android:title="@string/preferences_interface_homescreen_general_stretch_screens_title"
             android:summary="@string/preferences_interface_homescreen_general_stretch_screens_summary"
@@ -45,6 +53,16 @@
             android:title="@string/preferences_interface_homescreen_general_search_title"
             android:summary="@string/preferences_interface_homescreen_general_search_summary"
             android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="ui_homescreen_icons"
+        android:title="@string/preferences_interface_homescreen_icons_category">
+         <com.tripndroid.launcher3.preference.SeekBarDialogPreference android:key="ui_icon_scale"
+            android:title="@string/preferences_interface_dock_icon_scale_title"
+            android:summary="@string/preferences_interface_homescreen_icon_scale_summary"
+            launcher:min="60"
+            launcher:max="100"
+            android:defaultValue="100" />
         <CheckBoxPreference android:key="ui_homescreen_general_hide_icon_labels"
             android:title="@string/preferences_interface_homescreen_general_hide_icon_labels_title"
             android:summary="@string/preferences_interface_homescreen_general_hide_icon_labels_summary" />
@@ -64,12 +82,6 @@
             android:title="@string/preferences_interface_homescreen_scrolling_wallpaper_hack_title"
             android:summary="@string/preferences_interface_homescreen_scrolling_wallpaper_hack_summary"
             android:defaultValue="@bool/config_workspaceDefaultWallpaperHack" />
-        <com.tripndroid.launcher3.preference.NumberPickerPreference android:key="ui_homescreen_scrolling_wallpaper_size"
-            android:title="@string/preferences_interface_homescreen_scrolling_wallpaper_size_title"
-            android:summary="@string/preferences_interface_homescreen_scrolling_wallpaper_size_summary"
-            android:defaultValue="2"
-            launcher:max="5"
-            launcher:min="2" />
         <CheckBoxPreference android:key="ui_homescreen_scrolling_fade_adjacent_screens"
             android:title="@string/preferences_interface_homescreen_scrolling_fade_adjacent_screens_title"
             android:summary="@string/preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary"

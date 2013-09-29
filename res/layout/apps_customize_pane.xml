@@ -15,8 +15,7 @@
 -->
 <com.tripndroid.launcher3.AppsCustomizeTabHost
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res/com.tripndroid.launcher3"
-    android:background="#00000000">
+    xmlns:launcher="http://schemas.android.com/apk/res/com.tripndroid.launcher3" >
     <LinearLayout
         android:id="@+id/apps_customize_content"
         android:orientation="vertical"
@@ -51,8 +50,7 @@
                     layout="@layout/overflow_menu_button"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_toLeftOf="@id/overflow_menu_button"
-                    android:layout_alignWithParentIfMissing="true" />
+                    android:layout_alignParentRight="true" />
             </RelativeLayout>
         </FrameLayout>
         <FrameLayout
@@ -82,7 +80,7 @@
                 android:id="@+id/animation_buffer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#00000000"
+                android:background="#FF000000"
                 android:visibility="gone" />
 
             <include

@@ -71,7 +71,7 @@ import java.util.Set;
  */
 public class LauncherModel extends BroadcastReceiver {
     private static final boolean DEBUG_LOADERS = false;
-    private static final String TAG = "Launcher.LauncherModel";
+    private static final String TAG = "Launcher3.LauncherModel";
 
     private static final int ITEMS_CHUNK = 6; // batch size for the workspace icons
     private final boolean mAppsCanBeOnExternalStorage;

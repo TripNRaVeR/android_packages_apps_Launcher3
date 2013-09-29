@@ -33,7 +33,7 @@ import android.widget.TextView;
  * The linear layout used strictly for the widget/wallpaper tab of the customization tray
  */
 public class PagedViewWidget extends LinearLayout {
-    private static final String TAG = "Launcher.PagedViewWidgetLayout";
+    private static final String TAG = "Launcher3.PagedViewWidgetLayout";
 
     private static boolean sDeletePreviewsWhenDetachedFromWindow = true;
     private static boolean sRecyclePreviewsWhenDetachedFromWindow = true;

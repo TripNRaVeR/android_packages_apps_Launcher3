@@ -18,11 +18,9 @@
 */
 -->
 <manifest
-        android:versionName="1.0.0"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.tripndroid.launcher3">
-
-    <original-package android:name="com.tripndroid.launcher3" />
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tripndroid.launcher3"
+    android:versionName="@string/application_version">
 
     <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="18" />
 
@@ -67,7 +65,6 @@
     <uses-permission android:name="android.permission.BIND_APPWIDGET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
     <uses-permission android:name="com.tripndroid.launcher3.permission.MANAGE_LIVE_FOLDERS"/>
@@ -121,7 +118,7 @@
         <receiver
             android:name="com.tripndroid.launcher3.LiveFoldersReceiver">
             <intent-filter>
-                <action android:name="tripndroid.intent.action.UPDATE_LIVE_FOLDER" />
+                <action android:name="cyanogenmod.intent.action.UPDATE_LIVE_FOLDER" />
             </intent-filter>
         </receiver>
 

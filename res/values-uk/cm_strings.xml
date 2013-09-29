@@ -17,7 +17,6 @@
     <string name="hidden_apps_title">Приховані програми</string>
     <string name="preferences_title">Налаштування</string>
     <string name="preferences_interface_title">Інтерфейс</string>
-    <string name="preferences_application_title">Програма</string>
     <string name="preferences_interface_homescreen_title">Головний екран</string>
     <string name="preferences_interface_homescreen_summary">Налаштування екранів та фонів</string>
     <string name="preferences_interface_homescreen_general_category">ГОЛОВНІ</string>
@@ -42,8 +41,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Прокручувати фон при гортанні робочих столів</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Швидке малювання фону</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Використовуйте це налаштування для збільшення гладості статичного фону</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Розмір фону</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Якого розміру повинен бути фон</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Затемняти краї екранів</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Затемняти краї екранів при гортанні</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Показувати межі</string>

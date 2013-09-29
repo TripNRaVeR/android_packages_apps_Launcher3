@@ -24,13 +24,15 @@ import android.view.View;
 import android.view.ViewDebug;
 import android.view.ViewGroup;
 
+import com.tripndroid.launcher3.preference.PreferencesProvider;
+
 /**
  * An abstraction of the original CellLayout which supports laying out items
  * which span multiple cells into a grid-like layout.  Also supports dimming
  * to give a preview of its contents.
  */
 public class PagedViewCellLayout extends ViewGroup implements Page {
-    private static final String TAG = "Launcher.PagedViewCellLayout";
+    private static final String TAG = "Launcher3.PagedViewCellLayout";
 
     private int mCellCountX;
     private int mCellCountY;
@@ -109,12 +111,19 @@ public class PagedViewCellLayout extends ViewGroup implements Page {
             if (lp.cellHSpan < 0) lp.cellHSpan = mCellCountX;
             if (lp.cellVSpan < 0) lp.cellVSpan = mCellCountY;
 
+            child.setScaleX(getChildrenScale());
+            child.setScaleY(getChildrenScale());
+
             child.setId(childId);
             mChildren.addView(child, index, lp);
 
             return true;
         }
         return false;
+    }
+
+    public float getChildrenScale() {
+        return PreferencesProvider.Interface.Drawer.getIconScale(100) / 100f;
     }
 
     @Override

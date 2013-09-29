@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 The Android Open Source Project
+ * Copyright (C) 2011 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +17,13 @@
 package com.tripndroid.launcher3.preference;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
+import android.preference.ListPreference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
@@ -45,7 +50,7 @@ public class Preferences extends PreferenceActivity
 
     private static final String TAG = "Launcher3.Preferences";
 
-    private SharedPreferences mPreferences;
+    private static SharedPreferences mPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -140,12 +145,38 @@ public class Preferences extends PreferenceActivity
     }
 
     public static class DrawerFragment extends PreferenceFragment {
+        private static Preference mDrawerColor;
+
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
 
             addPreferencesFromResource(R.xml.preferences_drawer);
+            mDrawerColor = (Preference) findPreference("ui_drawer_background");
         }
+
+       public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+            boolean value;
+
+            if (preference == mDrawerColor) {
+                ColorPickerDialog cp = new ColorPickerDialog(getActivity(),
+                        mDrawerColorListener, PreferencesProvider.Interface.Drawer.getDrawerColor());
+                cp.setDefaultColor(0x00000000);
+                cp.show();
+                return true;
+            }
+            return super.onPreferenceTreeClick(preferenceScreen, preference);
+        }
+
+        ColorPickerDialog.OnColorChangedListener mDrawerColorListener =
+            new ColorPickerDialog.OnColorChangedListener() {
+                public void colorChanged(int color) {
+                    mPreferences.edit().putInt("ui_drawer_background",
+                            color).commit();
+                }
+                public void colorUpdate(int color) {
+                }
+        };
     }
 
     public static class DockFragment extends PreferenceFragment {
@@ -209,7 +240,11 @@ public class Preferences extends PreferenceActivity
         private LayoutInflater mInflater;
 
         static int getHeaderType(Header header) {
+            if (header.id == R.id.preferences_application_section || header.id == R.id.preferences_application_top) {
+                return HEADER_TYPE_CATEGORY;
+            } else {
                 return HEADER_TYPE_NORMAL;
+            }
         }
 
         @Override

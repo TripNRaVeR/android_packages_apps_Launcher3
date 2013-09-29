@@ -21,7 +21,7 @@
     <string name="menu_lock_workspace">Bloqueja pantalla d\'inici</string>
     <string name="menu_unlock_workspace">Desbloqueja pantalla d\'inici</string>
 
-    <string name="menu_preferences">Ajustaments Launcher</string>
+    <string name="menu_preferences">Ajustaments Launcher3</string>
 
     <string name="menu_apps_sort_title">Nom</string>
     <string name="menu_apps_sort_install_date">Data d\'instal·lació</string>
@@ -37,7 +37,6 @@
 
     <string name="preferences_title">Ajustaments</string>
     <string name="preferences_interface_title">Interfície</string>
-    <string name="preferences_application_title">App</string>
 
     <string name="preferences_interface_homescreen_title">Pantalla d\'inici</string>
     <string name="preferences_interface_homescreen_summary">Pantalles i fons de pantalla</string>
@@ -63,8 +62,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Llisca el fons de pantalla quan es passi a través de les pantalles d\'inici</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Renderitzat ràpid del fons de pantalla</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Utilitza un truc per incrementar la fluïdesa  en els fons de pantalla estàtics</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Mida del fons de pantalla</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Quantes pantalles d\'ample hauria de ser el fons de pantalla</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Esvaeix el costat de les pàgines</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Esvaeix el costat de les pàgines quan es llisqui entre pantalles</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Mostra contorns</string>

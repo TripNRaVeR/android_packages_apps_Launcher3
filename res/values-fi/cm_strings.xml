@@ -19,7 +19,6 @@
     <string name="menu_apps_sort_install_date">Asennuspäivä</string>
     <string name="preferences_title">Asetukset</string>
     <string name="preferences_interface_title">Käyttöliittymä</string>
-    <string name="preferences_application_title">Sovellus</string>
     <string name="preferences_interface_homescreen_title">Kotinäyttö</string>
     <string name="preferences_interface_homescreen_summary">Näytöt ja taustakuva</string>
     <string name="preferences_interface_homescreen_general_category">Yleiset</string>
@@ -44,8 +43,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Vieritä taustakuvaa näytöllä siirryttäessä</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Taustakuvan nopea esitys</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Käytä taustakuvan korjausta joka parantaa sulavuutta liikkumattomissa taustakuvissa</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Taustakuvan koko</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Monenko näytön levyinen taustakuvan pitäisi olla</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Häivytä viereiset näytöt</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Häivytä viereiset näytöt vierittäessä kotinäyttöjä</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Näytä ulkoreunat</string>
@@ -120,7 +117,7 @@
     <string name="effects_carousel_right">Karuselli oikea</string>
     <string name="menu_lock_workspace">Lukitse kotinäyttö</string>
     <string name="menu_unlock_workspace">Poista kotinäytön lukitus</string>
-    <string name="menu_preferences">Trebuchetin asetukset</string>
+    <string name="menu_preferences">Launcher3in asetukset</string>
     <string name="all_apps_sort_cling_title">Järjestä sovellukset</string>
     <string name="all_apps_sort_cling_add_item">Pidä Sovellukset-välilehteä pohjassa valitaksesi järjestyksen</string>
     <string name="workspace_locked">Kotinäyttö on lukittu, poista lukitus asetuksista järjestääksesi uudelleen</string>

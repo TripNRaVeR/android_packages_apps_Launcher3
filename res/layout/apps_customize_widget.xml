@@ -69,7 +69,7 @@
             android:layout_weight="0"
             android:gravity="left"
 
-            android:textColor="#FFFFFFFF"
+            android:textColor="#FF555555"
             android:textSize="12sp" />
     </LinearLayout>
 

@@ -16,6 +16,9 @@
 
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <header android:id="@+id/preferences_application_top"
+            android:title="@string/preferences_application_top_title" />
+
     <header android:id="@+id/preferences_homescreen_section"
             android:fragment="com.tripndroid.launcher3.preference.Preferences$HomescreenFragment"
             android:title="@string/preferences_interface_homescreen_title"
@@ -29,6 +32,9 @@
     <header android:id="@+id/preferences_dock_section"
             android:fragment="com.tripndroid.launcher3.preference.Preferences$DockFragment"
             android:title="@string/preferences_interface_dock_title" />
+
+    <header android:id="@+id/preferences_application_section"
+            android:title="@string/preferences_application_title" />
 
     <header android:id="@+id/preferences_general_section"
             android:fragment="com.tripndroid.launcher3.preference.Preferences$GeneralFragment"

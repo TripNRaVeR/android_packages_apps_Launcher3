@@ -20,7 +20,7 @@
     <string name="edit_target_label">Editar</string>
     <string name="menu_lock_workspace">Bloquear pantalla</string>
     <string name="menu_unlock_workspace">Desbloquear pantalla</string>
-    <string name="menu_preferences">Ajustes de Launcher</string>
+    <string name="menu_preferences">Ajustes de Launcher3</string>
     <string name="menu_apps_sort_title">Nombre</string>
     <string name="menu_apps_sort_install_date">Fecha</string>
     <string name="menu_apps_filter_system">Sistema</string>
@@ -32,7 +32,6 @@
     <string name="workspace_locked">La pantalla de inicio está bloqueada. Accede a ajustes para permitir su reorganización</string>
     <string name="preferences_title">Preferencias</string>
     <string name="preferences_interface_title">Interfaz</string>
-    <string name="preferences_application_title">Aplicación</string>
     <string name="preferences_interface_homescreen_title">Pantalla de inicio</string>
     <string name="preferences_interface_homescreen_summary">Pantallas y fondo</string>
     <string name="preferences_interface_homescreen_general_category">General</string>
@@ -57,8 +56,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Desplazar el fondo de la pantalla de inicio al desplazarse entre las pantallas</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Renderizado rápido</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Usar el renderizado rápido, suaviza los fondos de pantalla con imágenes estáticas</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Tamaño del fondo</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Establecer cuantas pantallas ocupará el fondo de pantalla</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Efecto de fundido</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Efecto de fundido al desplazarse entre pantallas</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Bordes de pantalla</string>

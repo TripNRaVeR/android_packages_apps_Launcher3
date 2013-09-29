@@ -36,7 +36,7 @@ public class UserInitializeReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         final Resources resources = context.getResources();
         // Context.getPackageName() may return the "original" package name,
-        // com.tripndroid.launcher; Resources needs the real package name,
+        // com.tripndroid.launcher3; Resources needs the real package name,
         // com.android.launcher. So we ask Resources for what it thinks the
         // package name should be.
         final String packageName = resources.getResourcePackageName(R.array.wallpapers);

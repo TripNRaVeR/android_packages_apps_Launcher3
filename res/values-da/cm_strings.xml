@@ -19,7 +19,7 @@
     <string name="edit_target_label">Rediger</string>
     <string name="menu_lock_workspace">Lås startskærm</string>
     <string name="menu_unlock_workspace">Lås startskærm op</string>
-    <string name="menu_preferences">Launcher-indstillinger</string>
+    <string name="menu_preferences">Launcher3-indstillinger</string>
     <string name="menu_apps_sort_title">Navn</string>
     <string name="menu_apps_sort_install_date">Installationsdato</string>
     <string name="menu_apps_filter_system">System</string>
@@ -31,7 +31,6 @@
     <string name="workspace_locked">Startskærm er låst, lås den op for at omarrangere</string>
     <string name="preferences_title">Indstillinger</string>
     <string name="preferences_interface_title">Brugerflade</string>
-    <string name="preferences_application_title">App</string>
     <string name="preferences_interface_homescreen_title">Startskærm</string>
     <string name="preferences_interface_homescreen_summary">Skærme og tapet</string>
     <string name="preferences_interface_homescreen_general_category">Generelt</string>
@@ -56,8 +55,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Rul tapetet ved bladring mellem startskærme</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Hurtig rendering af tapet</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Brug hack til tapet, der øger glathed på statiske tapetbilleder</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Tapetets størrelse</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Hvor mange skærmbredder skal tapetet være</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Udton sideskærme</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Udton sideskærme, når startskærme bladres</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Vis konturer</string>

@@ -33,7 +33,6 @@
     <string name="workspace_locked">Pracovní plocha uzamčena. Pro změnu uspořádání ji nejprve odemkněte v nastavení.</string>
     <string name="preferences_title">Předvolby</string>
     <string name="preferences_interface_title">Rozhraní</string>
-    <string name="preferences_application_title">Aplikace</string>
     <string name="preferences_interface_homescreen_title">Pracovní plocha</string>
     <string name="preferences_interface_homescreen_summary">Plochy a tapeta</string>
     <string name="preferences_interface_homescreen_general_category">Hlavní</string>
@@ -58,8 +57,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Posouvání tapety při posunu plochy</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Rychlé vykreslování tapety</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Použít upravené vykreslování, které způsobí plynulejší posun při použití statické tapety</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Velikost tapety</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Přes kolik ploch má být tapeta zvětšena</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Prolínat hranu plochy</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Prolínat hranu plochy při posouvání mezi plochami</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Zobrazit ohraničení</string>

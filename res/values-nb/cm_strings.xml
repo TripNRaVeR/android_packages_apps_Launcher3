@@ -19,7 +19,7 @@
     <string name="edit_target_label">Rediger</string>
     <string name="menu_lock_workspace">Lås hjemmeskjerm</string>
     <string name="menu_unlock_workspace">Lås opp hjemmeskjerm</string>
-    <string name="menu_preferences">Launcher innstillinger</string>
+    <string name="menu_preferences">Launcher3 innstillinger</string>
     <string name="menu_apps_sort_title">Navn</string>
     <string name="menu_apps_sort_install_date">Dato installert</string>
     <string name="menu_apps_filter_system">System</string>
@@ -31,7 +31,6 @@
     <string name="workspace_locked">Hjemmeskjermen er låst, lås den opp i innstillinger for å omorganisere</string>
     <string name="preferences_title">Innstillinger</string>
     <string name="preferences_interface_title">Grensesnitt</string>
-    <string name="preferences_application_title">App</string>
     <string name="preferences_interface_homescreen_title">Hjemmeskjerm</string>
     <string name="preferences_interface_homescreen_summary">Skjermer og bakgrunn</string>
     <string name="preferences_interface_homescreen_general_category">Generelt</string>
@@ -56,8 +55,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Scroll bakgrunnen når det scrolles mellom hjemmeskjermene</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Rask bakgrunnsrendring</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Bruk en hack som gjør at scrolling med statiske bakgrunner blir jevnere</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Størrelse på bakgrunnsbilde</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Hvor mange skjermer bred skal bakgrunnen være</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Nedtone sideskjermer</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Nedtone sideskjermene ved scrolling</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Vis linjer</string>

@@ -19,7 +19,7 @@
     <string name="edit_target_label">Düzenle</string>
     <string name="menu_lock_workspace">Ana ekranı kilitle</string>
     <string name="menu_unlock_workspace">Ana ekran kilidini aç</string>
-    <string name="menu_preferences">Launcher ayarları</string>
+    <string name="menu_preferences">Launcher3 ayarları</string>
     <string name="menu_apps_sort_title">İsim</string>
     <string name="menu_apps_sort_install_date">Yükleme tarihi</string>
     <string name="menu_apps_filter_system">Sistem</string>
@@ -31,7 +31,6 @@
     <string name="workspace_locked">Ana ekran kilitlendi, değişiklik için kilidi açın</string>
     <string name="preferences_title">Ayarlar</string>
     <string name="preferences_interface_title">Arayüz</string>
-    <string name="preferences_application_title">Uygulama</string>
     <string name="preferences_interface_homescreen_title">Ana ekran</string>
     <string name="preferences_interface_homescreen_summary">Ekranlar ve duvar kağıdı</string>
     <string name="preferences_interface_homescreen_general_category">Genel</string>
@@ -56,8 +55,6 @@
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Ana ekranda kaydırırken duvar kağıdını kaydır</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Duvar kağıdını hızlı render et</string>
     <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Durağan resim duvar kağıtlarının yumuşaklığını arttıran bir hacki etkinleştir</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_title">Duvar kağıdı boyutu</string>
-    <string name="preferences_interface_homescreen_scrolling_wallpaper_size_summary">Duvar kağıdının kaç ekran boyutunda olacağını ayarla</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Yanlardaki ekranları soldur</string>
     <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Ev ekranlarında kaydırırken yanlardaki ekranı soldur</string>
     <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Kenar çizgilerini göster</string>

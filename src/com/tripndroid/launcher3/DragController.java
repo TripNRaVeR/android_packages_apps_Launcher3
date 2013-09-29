@@ -60,8 +60,6 @@ public class DragController {
     static final int SCROLL_LEFT = 0;
     static final int SCROLL_RIGHT = 1;
 
-    private int mSecondPointerIndex = -1;
-
     private static final float MAX_FLING_DEGREES = 35f;
 
     private Launcher mLauncher;
@@ -431,7 +429,7 @@ public class DragController {
         final int dragLayerX = dragLayerPos[0];
         final int dragLayerY = dragLayerPos[1];
 
-        switch (action & MotionEvent.ACTION_MASK) {
+        switch (action) {
             case MotionEvent.ACTION_MOVE:
                 break;
             case MotionEvent.ACTION_DOWN:
@@ -441,7 +439,6 @@ public class DragController {
                 mLastDropTarget = null;
                 break;
             case MotionEvent.ACTION_UP:
-                mSecondPointerIndex = -1;
                 mLastTouchUpTime = System.currentTimeMillis();
                 if (mDragging) {
                     PointF vec = isFlingingToDelete(mDragObject.dragSource);
@@ -454,7 +451,6 @@ public class DragController {
                 endDrag();
                 break;
             case MotionEvent.ACTION_CANCEL:
-                mSecondPointerIndex = -1;
                 cancelDrag();
                 break;
         }
@@ -478,8 +474,7 @@ public class DragController {
         if (mScrollState == SCROLL_WAITING_IN_ZONE) {
             mScrollState = SCROLL_OUTSIDE_ZONE;
             mScrollRunnable.setDirection(SCROLL_RIGHT);
-            if (mDragScroller != null)
-                mDragScroller.onExitScrollArea();
+            mDragScroller.onExitScrollArea();
             mLauncher.getDragLayer().onExitScrollArea();
         }
     }
@@ -537,7 +532,7 @@ public class DragController {
         if (x < mScrollZone) {
             if (mScrollState == SCROLL_OUTSIDE_ZONE) {
                 mScrollState = SCROLL_WAITING_IN_ZONE;
-                if (mDragScroller != null && mDragScroller.onEnterScrollArea(x, y, SCROLL_LEFT)) {
+                if (mDragScroller.onEnterScrollArea(x, y, SCROLL_LEFT)) {
                     mLauncher.getDragLayer().onEnterScrollArea();
                     mScrollRunnable.setDirection(SCROLL_LEFT);
                     mHandler.postDelayed(mScrollRunnable, delay);
@@ -546,7 +541,7 @@ public class DragController {
         } else if (x > mScrollView.getWidth() - mScrollZone) {
             if (mScrollState == SCROLL_OUTSIDE_ZONE) {
                 mScrollState = SCROLL_WAITING_IN_ZONE;
-                if (mDragScroller != null && mDragScroller.onEnterScrollArea(x, y, SCROLL_RIGHT)) {
+                if (mDragScroller.onEnterScrollArea(x, y, SCROLL_RIGHT)) {
                     mLauncher.getDragLayer().onEnterScrollArea();
                     mScrollRunnable.setDirection(SCROLL_RIGHT);
                     mHandler.postDelayed(mScrollRunnable, delay);
@@ -573,17 +568,7 @@ public class DragController {
         final int dragLayerX = dragLayerPos[0];
         final int dragLayerY = dragLayerPos[1];
 
-        switch (action & MotionEvent.ACTION_MASK) {
-        case MotionEvent.ACTION_POINTER_DOWN:
-            mSecondPointerIndex = ev.getActionIndex();
-            // pass this onto the workspace so it can record the x,y location
-            mLauncher.getWorkspace().onTouchEvent(ev);
-            break;
-        case MotionEvent.ACTION_POINTER_UP:
-            mSecondPointerIndex = -1;
-            // pass this onto the workspace so it can record the finishing any movement
-            mLauncher.getWorkspace().onTouchEvent(ev);
-            break;
+        switch (action) {
         case MotionEvent.ACTION_DOWN:
             // Remember where the motion event started
             mMotionDownX = dragLayerX;
@@ -597,14 +582,9 @@ public class DragController {
             }
             break;
         case MotionEvent.ACTION_MOVE:
-            // pointer index and ID are always coming back as 0 so we'll just check
-            // whether mSecondPointerIndex is not -1 and pass the event to the workspace
-            if (mSecondPointerIndex != -1)
-                return mLauncher.getWorkspace().onTouchEvent(ev);
             handleMoveEvent(dragLayerX, dragLayerY);
             break;
         case MotionEvent.ACTION_UP:
-            mSecondPointerIndex = -1;
             // Ensure that we've processed a move event at the current pointer location.
             handleMoveEvent(dragLayerX, dragLayerY);
             mHandler.removeCallbacks(mScrollRunnable);
@@ -620,7 +600,6 @@ public class DragController {
             endDrag();
             break;
         case MotionEvent.ACTION_CANCEL:
-            mSecondPointerIndex = -1;
             mHandler.removeCallbacks(mScrollRunnable);
             cancelDrag();
             break;

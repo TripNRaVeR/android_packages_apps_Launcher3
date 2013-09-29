@@ -24,6 +24,8 @@ import android.view.ViewParent;
 import android.widget.TabHost;
 import android.widget.TabWidget;
 
+import com.tripndroid.launcher3.R;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -58,7 +60,7 @@ class HotseatIconKeyEventListener implements View.OnKeyListener {
 
 /**
  * A keyboard listener we set on the last tab button in AppsCustomize to jump to then
- * market icon and vice versa.
+ * menu icon and vice versa.
  */
 class AppsCustomizeTabKeyEventListener implements View.OnKeyListener {
     public boolean onKey(View v, int keyCode, KeyEvent event) {
@@ -79,7 +81,7 @@ public class FocusHelper {
     }
 
     /**
-     * Handles key events in a AppsCustomize tab between the last tab view and the shop/menu button.
+     * Handles key events in a AppsCustomize tab between the last tab view and the menu button.
      */
     static boolean handleAppsCustomizeTabKeyEvent(View v, int keyCode, KeyEvent e) {
         final TabHost tabHost = findTabHostParent(v);
@@ -92,6 +94,7 @@ public class FocusHelper {
         switch (keyCode) {
             case KeyEvent.KEYCODE_DPAD_RIGHT:
                 if (handleKeyEvent) {
+                    // Select the menu button if we aren't on it
                     if (v != overflowMenu) {
                         if (overflowMenu.getVisibility() == View.VISIBLE) {
                             overflowMenu.requestFocus();

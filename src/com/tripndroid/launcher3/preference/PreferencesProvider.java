@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 The Android Open Source Project
+ * Copyright (C) 2011 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ import com.tripndroid.launcher3.AppsCustomizePagedView;
 import java.util.Map;
 
 public final class PreferencesProvider {
-    public static final String PREFERENCES_KEY = "com.tripndroid.launcher_preferences";
+    public static final String PREFERENCES_KEY = "com.tripndroid.launcher3_preferences";
 
     public static final String PREFERENCES_CHANGED = "preferences_changed";
 
@@ -74,20 +74,8 @@ public final class PreferencesProvider {
             public static int getNumberHomescreens() {
                 return getInt("ui_homescreen_screens", 5);
             }
-            public static void setNumberHomescreens(Context context, int count) {
-                final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
-                Editor editor = preferences.edit();
-                editor.putInt("ui_homescreen_screens", count);
-                editor.commit();
-            }
             public static int getDefaultHomescreen(int def) {
                 return getInt("ui_homescreen_default_screen", def + 1) - 1;
-            }
-            public static void setDefaultHomescreen(Context context, int def) {
-                final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
-                Editor editor = preferences.edit();
-                editor.putInt("ui_homescreen_default_screen", def);
-                editor.commit();
             }
             public static int getCellCountX(int def) {
                 String[] values = getString("ui_homescreen_grid", "0|" + def).split("\\|");
@@ -108,6 +96,9 @@ public final class PreferencesProvider {
             public static boolean getStretchScreens() {
                 return getBoolean("ui_homescreen_stretch_screens", true);
             }
+             public static int getIconScale(int def) {
+                 return getInt("ui_icon_scale", def);
+             }
             public static boolean getShowSearchBar() {
                 return getBoolean("ui_homescreen_general_search", true);
             }
@@ -164,14 +155,23 @@ public final class PreferencesProvider {
             public static boolean getVertical() {
                 return getString("ui_drawer_orientation", "horizontal").equals("vertical");
             }
+             public static int getIconScale(int def) {
+                 return getInt("ui_drawer_icon_scale", def);
+             }
+             public static boolean getDrawerShowWallpaper() {
+                 return true;
+             }
+             public static int getDrawerColor() {
+                 return getInt("ui_drawer_background", 0x00000000);
+             }
             public static String getHiddenApps() {
                 return getString("ui_drawer_hidden_apps", "");
             }
             public static boolean getRemoveShortcutsOfHiddenApps() {
-                return getBoolean("ui_drawer_remove_hidden_apps_shortcuts", false);
+                return getBoolean("ui_drawer_remove_hidden_apps_shortcuts", true);
             }
             public static boolean getRemoveWidgetsOfHiddenApps() {
-                return getBoolean("ui_drawer_remove_hidden_apps_widgets", false);
+                return getBoolean("ui_drawer_remove_hidden_apps_widgets", true);
             }
             public static boolean getJoinWidgetsApps() {
                 return getBoolean("ui_drawer_widgets_join_apps", true);
@@ -194,7 +194,7 @@ public final class PreferencesProvider {
                     return AppsCustomizePagedView.TransitionEffect.Standard;
                 }
                 public static boolean getFadeInAdjacentScreens() {
-                    return getBoolean("ui_drawer_scrolling_fade_adjacent_screens", true);
+                    return getBoolean("ui_drawer_scrolling_fade_adjacent_screens", false);
                 }
             }
             public static class Indicator {

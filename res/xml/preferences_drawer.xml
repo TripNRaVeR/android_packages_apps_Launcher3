@@ -24,6 +24,11 @@
         android:entries="@array/preferences_interface_drawer_orientation_entries"
         android:entryValues="@array/preferences_interface_drawer_orientation_values"
         android:defaultValue="horizontal" />
+    <PreferenceCategory android:title="@string/preferences_interface_drawer_bg_category">
+        <Preference android:key="ui_drawer_background"
+            android:title="@string/preferences_interface_drawer_background_title"
+            android:summary="@string/preferences_interface_drawer_background_summary" />
+    </PreferenceCategory>
     <PreferenceCategory android:title="@string/preferences_interface_drawer_apps_category">
         <Preference android:key="ui_drawer_hidden_apps"
             android:title="@string/preferences_interface_drawer_hidden_apps_title"
@@ -32,14 +37,20 @@
                 android:targetPackage="com.tripndroid.launcher3"
                 android:targetClass="com.tripndroid.launcher3.preference.HiddenAppsActivity"/>
         </Preference>
+    <com.tripndroid.launcher3.preference.SeekBarDialogPreference android:key="ui_drawer_icon_scale"
+            android:title="@string/preferences_interface_dock_icon_scale_title"
+            android:summary="@string/preferences_interface_drawer_icon_scale_summary"
+            launcher:min="60"
+            launcher:max="100"
+            android:defaultValue="100" />
         <CheckBoxPreference android:key="ui_drawer_remove_hidden_apps_shortcuts"
             android:title="@string/preferences_interface_drawer_hidden_apps_shortcuts_title"
             android:summary="@string/preferences_interface_drawer_hidden_apps_shortcuts_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
         <CheckBoxPreference android:key="ui_drawer_remove_hidden_apps_widgets"
             android:title="@string/preferences_interface_drawer_hidden_apps_widgets_title"
             android:summary="@string/preferences_interface_drawer_hidden_apps_widgets_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/preferences_interface_drawer_widgets_category">
         <CheckBoxPreference android:key="ui_drawer_widgets_join_apps"
@@ -56,8 +67,7 @@
             android:defaultValue="@string/config_drawerDefaultTransitionEffect" />
         <CheckBoxPreference android:key="ui_drawer_scrolling_fade_adjacent_screens"
             android:title="@string/preferences_interface_drawer_scrolling_fade_adjacent_screens_title"
-            android:summary="@string/preferences_interface_drawer_scrolling_fade_adjacent_screens_summary"
-            android:defaultValue="true" />
+            android:summary="@string/preferences_interface_drawer_scrolling_fade_adjacent_screens_summary" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/preferences_interface_drawer_indicator_category">
         <CheckBoxPreference android:key="ui_drawer_indicator_enable"
