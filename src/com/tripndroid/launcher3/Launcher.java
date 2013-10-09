@@ -1314,6 +1314,7 @@ public final class Launcher extends Activity
                             folderIcon = (FolderIcon)v;
                             break;
                         }
+                        LauncherModel.updateItemInDatabase(Launcher.this, info);
                     }
                 }
                 if (folderIcon != null) {
